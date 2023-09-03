@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TO DO LIST APP</title>
+        <link rel="icon" type="image/x-icon" href="images/todolist.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <!-- adding a container class -->
+        <div class="container">
+            <!-- The main structure of the page starts from here -->
+          
+          <main> 
+            <!-- making a div class named todo-app to make a box-model and using some images to make the page look better -->
+            <div class="todo-app">
+               <h2>To Do List <img src="images/icon.png" alt="notes-icon"></h2>
+               <div class="search-bar" >
+                <input type="text" id="input-box" placeholder="Type your todo list">
+                <button onclick="addTask()">Add</button>
+               </div>
+               <!-- creating two small headings to my app just to make the user to understand what will be entered below them -->
+               <div class="heading">
+                <p>Complete all tasks</p>
+                <p>Clear completed</p>
+               </div>
+               <hr class="line-break">
+               <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 1</li>
+                <li>Task 1</li> -->
+               </ul>
+            </div>
+          </main>
+        </div>
+    
+       
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
